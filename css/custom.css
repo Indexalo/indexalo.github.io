@@ -1,0 +1,123 @@
+/* Extra styles that live outside Tailwind's utility set.
+   Tailwind itself is loaded via CDN in index.html with a custom theme
+   (primary / accent / dark / dark-deep / dark-lighter / dark-light). */
+
+.gradient-text {
+  background: linear-gradient(90deg, #38BDF8, #6C7CFA, #8B5CF6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Client-logo carousel — always white/monochrome, just a subtle lift on hover */
+.client-icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.client-icon:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.client-mark { transition: opacity 0.25s ease, transform 0.25s ease; }
+.client-mark-text { color: #d1d5db; opacity: 0.7; transition: opacity 0.25s ease; }
+.client-mark:hover { transform: translateY(-2px); }
+.client-mark:hover .client-icon,
+.client-mark:hover .client-mark-text { opacity: 1; }
+
+/* Faint grid overlay used behind the services + testimonials sections */
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Subtle section-background gradients */
+.gradient-dark-2 {
+  background-image: radial-gradient(circle at 15% 0%, rgba(124,108,246,0.10), transparent 45%);
+}
+.gradient-dark-3 {
+  background-image: radial-gradient(circle at 85% 100%, rgba(78,140,251,0.10), transparent 45%);
+}
+
+/* Nav links with an animated underline on hover */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4E8CFB, #7C6CF6);
+  transition: width 0.25s ease;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Tech-stack carousel items — plain, no card/box around them.
+   Default: white/monochrome. On hover: full original color. */
+.tech-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  background: none;
+  border: none;
+}
+/* Swiper gives each slide tabindex for accessibility, which makes browsers
+   draw a default focus/hover outline box — kill it here. */
+.tech-swiper .swiper-slide,
+.tech-swiper .swiper-slide:hover,
+.tech-swiper .swiper-slide:focus,
+.tech-card,
+.tech-card img {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.tech-icon {
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+.tech-card:hover .tech-icon {
+  filter: none;
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Scroll-reveal animation driven by the IntersectionObserver in index.html */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Swiper pagination bullets, recolored to match the brand palette */
+.swiper-pagination-bullet {
+  background: #4E8CFB !important;
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Cookie settings <dialog> needs an explicit open style since it's toggled
+   via Alpine calling showModal()/close() rather than the `open` attribute */
+dialog:not([open]) { display: none; }

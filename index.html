@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+
+    <meta name="description" content="Professional data analytics & BI implementation services. Expert consulting in BigQuery, Snowflake, GA4, Power BI, Tableau, data warehousing, ETL pipelines, and data engineering solutions. Transform your business with enterprise-grade analytics infrastructure.">
+    <meta name="keywords" content="data engineering consulting, business intelligence implementation, BigQuery expert, Snowflake consulting, GA4 implementation, data warehouse setup, ETL pipeline development, BI consulting, analytics implementation, data automation, Power BI development, Tableau consulting, data integration services, data strategy consulting, analytics infrastructure, data pipeline automation, business analytics solutions, data visualization services">
+
+    <meta property="og:title" content="Indexalo - Data Analytics & BI Implementation Services">
+    <meta property="og:description" content="Expert implementation of data analytics & BI solutions. Specializing in BigQuery, Snowflake, GA4, and data engineering.">
+    <meta property="og:image" content="images/indexalo_logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://www.indexalo.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Indexalo">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Indexalo - Data Analytics & BI Implementation">
+    <meta name="twitter:description" content="Expert implementation of data analytics & BI solutions. Transform your data infrastructure with end-to-end analytics solutions.">
+    <meta name="twitter:image" content="images/indexalo_logo.png">
+
+    <link rel="canonical" href="https://www.indexalo.com">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Indexalo",
+      "description": "Expert implementation of data analytics & BI solutions. Specializing in BigQuery, Snowflake, GA4, and data engineering.",
+      "url": "https://indexalo.com",
+      "address": { "@type": "PostalAddress", "addressCountry": "US" },
+      "priceRange": "$$$$",
+      "serviceType": ["Data Engineering", "Business Intelligence Implementation", "Analytics Consulting", "Data Warehouse Setup", "ETL Pipeline Development"],
+      "areaServed": "Worldwide"
+    }
+    </script>
+
+    <title>Indexalo - Data Engineering & BI Implementation | BigQuery, Snowflake, GA4, Power BI, Tableau Consulting Services</title>
+
+    <!-- Google tag (gtag.js) / GTM — this is your own tracking ID; swap or remove if
+         this site lives on a different property than the original.
+         The actual gtag.js + GTM scripts are NOT loaded here — they only load after
+         the visitor accepts cookies via the consent banner (see loadTrackingScripts()
+         near the cookie modal, just after <body>). This keeps "Reject All" meaningful
+         instead of cosmetic. -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied'
+        });
+    </script>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Tailwind CDN with the site's custom color theme -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4E8CFB',
+              accent: '#7C6CF6',
+              dark: '#060a12',
+              'dark-deep': '#0b1220',
+              'dark-lighter': '#101a2e',
+              'dark-light': '#223252',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body class="bg-dark text-white">
+    <!-- Cookie Consent Banner -->
+    <div x-data="{ showConsent: !localStorage.getItem('cookieConsent') }"
+         x-show="showConsent"
+         @cookie-consent-set.window="showConsent = false"
+         class="fixed bottom-0 left-0 right-0 z-50 bg-dark-deep/95 backdrop-blur-md border-t border-dark-light"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 transform translate-y-full"
+         x-transition:enter-end="opacity-100 transform translate-y-0"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100 transform translate-y-0"
+         x-transition:leave-end="opacity-0 transform translate-y-full">
+        <div class="max-w-7xl mx-auto p-4 sm:p-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+                <div class="flex-1 space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-primary text-sm font-medium tracking-wider uppercase">Cookie Settings</span>
+                    </div>
+                    <p class="text-gray-300 text-sm sm:text-base">
+                        We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.
+                        By clicking "Accept All", you consent to our use of cookies. Read our
+                        <a class='text-primary hover:text-primary/90 underline' href='/privacy-policy'>Privacy Policy</a> and
+                        <a class='text-primary hover:text-primary/90 underline' href='/privacy-policy#cookies'>Cookie Policy</a>, or
+                        <button type="button" onclick="openCookieSettings()" class="text-primary hover:text-primary/90 underline">customize your preferences</button>.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+                    <button onclick="applyConsent('essential')"
+                            class="px-6 py-2 bg-dark-lighter hover:bg-dark-light text-white text-sm sm:text-base rounded-lg transition-all duration-300">
+                        Essential Only
+                    </button>
+                    <button onclick="applyConsent('all')"
+                            class="px-6 py-2 bg-primary hover:bg-primary/90 text-white text-sm sm:text-base rounded-lg transition-all duration-300">
+                        Accept All
+                    </button>
+                    <button onclick="applyConsent('none')"
+                            class="px-6 py-2 bg-primary hover:bg-primary/90 text-white text-sm sm:text-base rounded-lg transition-all duration-300">
+                        Reject All
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal — reopen via "Cookie Preferences" in the footer or
+         "customize your preferences" in the banner above -->
+    <dialog id="cookieSettingsDialog" class="bg-dark-deep text-white rounded-xl p-0 backdrop:bg-black/80 w-full max-w-2xl mx-auto">
+        <div class="p-6 space-y-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-xl font-bold">Cookie Preferences</h3>
+                    <p class="mt-2 text-gray-400">Manage your cookie preferences</p>
+                </div>
+                <button onclick="document.getElementById('cookieSettingsDialog').close()" class="text-gray-400 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="space-y-6">
+                <!-- Essential Cookies -->
+                <div class="flex items-center justify-between p-4 bg-dark-lighter rounded-lg">
+                    <div>
+                        <p class="font-medium">Essential Cookies</p>
+                        <p class="text-sm text-gray-400">Required for the website to function properly</p>
+                    </div>
+                    <div class="relative">
+                        <input type="checkbox" checked disabled class="sr-only peer">
+                        <div class="w-11 h-6 bg-primary rounded-full"></div>
+                        <div class="absolute left-6 top-1 w-4 h-4 bg-white rounded-full"></div>
+                    </div>
+                </div>
+                <!-- Analytics Cookies -->
+                <div class="flex items-center justify-between p-4 bg-dark-lighter rounded-lg">
+                    <div>
+                        <p class="font-medium">Analytics Cookies</p>
+                        <p class="text-sm text-gray-400">Help us improve our website by collecting anonymous usage data</p>
+                    </div>
+                    <div class="relative">
+                        <input type="checkbox" id="prefAnalytics" class="sr-only peer">
+                        <label for="prefAnalytics" class="relative w-11 h-6 bg-gray-600 block rounded-full cursor-pointer peer-checked:bg-primary transition-colors">
+                            <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-5"></div>
+                        </label>
+                    </div>
+                </div>
+                <!-- Marketing Cookies -->
+                <div class="flex items-center justify-between p-4 bg-dark-lighter rounded-lg">
+                    <div>
+                        <p class="font-medium">Marketing Cookies</p>
+                        <p class="text-sm text-gray-400">Used to track visitors across websites for marketing purposes</p>
+                    </div>
+                    <div class="relative">
+                        <input type="checkbox" id="prefMarketing" class="sr-only peer">
+                        <label for="prefMarketing" class="relative w-11 h-6 bg-gray-600 block rounded-full cursor-pointer peer-checked:bg-primary transition-colors">
+                            <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-5"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end space-x-4 pt-6 border-t border-dark-light">
+                <button onclick="document.getElementById('cookieSettingsDialog').close()"
+                        class="px-4 py-2 bg-dark-lighter hover:bg-dark-light text-white rounded-lg transition-all duration-300">
+                    Cancel
+                </button>
+                <button onclick="saveCookiePreferences()"
+                        class="px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded-lg transition-all duration-300">
+                    Save Preferences
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        // ---- Cookie consent: banner choice + granular modal both funnel through here ----
+        // Tracking scripts are only injected once real consent is given, so "Reject All"
+        // and "Essential Only" genuinely block Analytics/GTM instead of just hiding the banner.
+        let trackingLoaded = false;
+
+        function loadTrackingScripts() {
+            if (trackingLoaded) return;
+            trackingLoaded = true;
+
+            gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted' });
+            gtag('config', 'G-98DQB8DP7N');
+
+            const gtagScript = document.createElement('script');
+            gtagScript.async = true;
+            gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-98DQB8DP7N';
+            document.head.appendChild(gtagScript);
+
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MVG3W8KR');
+
+            const noscriptFrame = document.createElement('noscript');
+            noscriptFrame.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVG3W8KR" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
+            document.body.appendChild(noscriptFrame);
+        }
+
+        function applyConsent(choice) {
+            // choice: 'all' | 'essential' | 'none' | 'custom'
+            localStorage.setItem('cookieConsent', choice);
+            if (choice === 'all') {
+                localStorage.setItem('cookiePrefAnalytics', '1');
+                localStorage.setItem('cookiePrefMarketing', '1');
+            } else if (choice === 'essential' || choice === 'none') {
+                localStorage.setItem('cookiePrefAnalytics', '0');
+                localStorage.setItem('cookiePrefMarketing', '0');
+            }
+            if (localStorage.getItem('cookiePrefAnalytics') === '1') {
+                loadTrackingScripts();
+            }
+            window.dispatchEvent(new Event('cookie-consent-set'));
+        }
+
+        function openCookieSettings() {
+            document.getElementById('prefAnalytics').checked = localStorage.getItem('cookiePrefAnalytics') === '1';
+            document.getElementById('prefMarketing').checked = localStorage.getItem('cookiePrefMarketing') === '1';
+            document.getElementById('cookieSettingsDialog').showModal();
+        }
+
+        function saveCookiePreferences() {
+            const analytics = document.getElementById('prefAnalytics').checked;
+            const marketing = document.getElementById('prefMarketing').checked;
+            localStorage.setItem('cookiePrefAnalytics', analytics ? '1' : '0');
+            localStorage.setItem('cookiePrefMarketing', marketing ? '1' : '0');
+            applyConsent('custom');
+            document.getElementById('cookieSettingsDialog').close();
+        }
+
+        // Returning visitor who previously opted in — load tracking without waiting for a click
+        (function () {
+            if (localStorage.getItem('cookiePrefAnalytics') === '1') {
+                loadTrackingScripts();
+            }
+        })();
+    </script>
+
+    <div x-data="{ isMenuOpen: false }">
+        <!-- Navbar -->
+        <nav class="fixed w-full bg-dark-deep/80 backdrop-blur-md border-b border-dark-light shadow-lg z-50 py-2">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
+                <div class="flex justify-between items-center">
+                    <div class="flex-shrink-0">
+                        <a href="#top" class="block">
+                            <img class="h-12 sm:h-14 w-auto" src="images/indexalo_logo.png" alt="Indexalo">
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-6">
+                        <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+                            <a href="#app" @click="open = false" class="nav-link flex items-center gap-1 text-gray-300 text-lg font-medium">
+                                App
+                                <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </a>
+                            <div x-show="open"
+                                 x-transition:enter="transition ease-out duration-200"
+                                 x-transition:enter-start="opacity-0 -translate-y-1"
+                                 x-transition:enter-end="opacity-100 translate-y-0"
+                                 x-transition:leave="transition ease-in duration-150"
+                                 x-transition:leave-start="opacity-100 translate-y-0"
+                                 x-transition:leave-end="opacity-0 -translate-y-1"
+                                 class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[340px] bg-dark-lighter border border-dark-light rounded-xl shadow-xl p-3 space-y-1">
+                                <a href="#app" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Analytics</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">Dashboards and tracking that turn raw activity into decisions.</p>
+                                    </div>
+                                </a>
+                                <a href="#ai-agent" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8V4H8"/>
+                                            <rect x="4" y="8" width="16" height="12" rx="2" stroke-width="1.5"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 14h2M20 14h2M9 13v2M15 13v2"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">AI Agent</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">Ask questions in plain language and get answers straight from your data.</p>
+                                    </div>
+                                </a>
+                                <a href="#custom-reports" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <rect x="3" y="3" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                            <rect x="14" y="3" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                            <rect x="3" y="14" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                            <rect x="14" y="14" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Custom Reports</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">Organize saved views into folders your whole team can navigate.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+                            <a href="/consulting" @click="open = false" class="nav-link flex items-center gap-1 text-gray-300 text-lg font-medium">
+                                Consulting
+                                <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </a>
+                            <div x-show="open"
+                                 x-transition:enter="transition ease-out duration-200"
+                                 x-transition:enter-start="opacity-0 -translate-y-1"
+                                 x-transition:enter-end="opacity-100 translate-y-0"
+                                 x-transition:leave="transition ease-in duration-150"
+                                 x-transition:leave-start="opacity-100 translate-y-0"
+                                 x-transition:leave-end="opacity-0 -translate-y-1"
+                                 class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[340px] bg-dark-lighter border border-dark-light rounded-xl shadow-xl p-3 space-y-1">
+                                <a href="/consulting#services" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7H4a2 2 0 00-2 2v9a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zM16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Services</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">End-to-end analytics implementation, from data architecture to BI dashboards.</p>
+                                    </div>
+                                </a>
+                                <a href="/consulting#platforms" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 010 5.656l-4 4a4 4 0 01-5.656-5.656l1.5-1.5M10.172 13.828a4 4 0 010-5.656l4-4a4 4 0 015.656 5.656l-1.5 1.5"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Platforms We Connect</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">Every data source wired into one pipeline, automatically.</p>
+                                    </div>
+                                </a>
+                                <a href="/consulting#use-cases" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Real-World Solutions</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">Proven implementation work across analytics, automation, and data integration.</p>
+                                    </div>
+                                </a>
+                                <a href="/consulting#why-choose-us" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Why Choose Us</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">What sets our implementations apart.</p>
+                                    </div>
+                                </a>
+                                <a href="/consulting#clients" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                        <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-4a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Our Clients</p>
+                                        <p class="text-sm text-gray-400 mt-0.5">What clients say about working with us.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#contact" class="bg-primary hover:bg-primary/90 text-white text-lg px-6 py-2 rounded-lg transition-all duration-300">Contact Us</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button @click="isMenuOpen = !isMenuOpen"
+                                class="p-2 text-gray-300 hover:text-primary transition-colors">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div x-show="isMenuOpen"
+                 x-transition:enter="transition ease-out duration-200"
+                 x-transition:enter-start="opacity-0 -translate-y-1"
+                 x-transition:enter-end="opacity-100 translate-y-0"
+                 x-transition:leave="transition ease-in duration-150"
+                 x-transition:leave-start="opacity-100 translate-y-0"
+                 x-transition:leave-end="opacity-0 -translate-y-1"
+                 @click.away="isMenuOpen = false"
+                 class="md:hidden">
+                <div class="px-4 pt-4 pb-6 space-y-3 bg-dark-lighter/80 backdrop-blur-md">
+                    <div class="px-4 pt-2 pb-1">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 font-medium">App</p>
+                    </div>
+                    <a href="#app" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        Analytics
+                    </a>
+                    <a href="#ai-agent" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        AI Agent
+                    </a>
+                    <a href="#custom-reports" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        Custom Reports
+                    </a>
+                    <div class="px-4 pt-2 pb-1">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 font-medium">Consulting</p>
+                    </div>
+                    <a href="/consulting#services" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        Services
+                    </a>
+                    <a href="/consulting#platforms" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        Platforms We Connect
+                    </a>
+                    <a href="/consulting#use-cases" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        Real-World Solutions
+                    </a>
+                    <a href="/consulting#why-choose-us" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        Why Choose Us
+                    </a>
+                    <a href="/consulting#clients" @click="isMenuOpen = false"
+                       class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
+                        Our Clients
+                    </a>
+                    <a href="#contact" @click="isMenuOpen = false"
+                       class="block px-4 py-3 bg-primary hover:bg-primary/90 text-white text-xl rounded-lg transition-colors">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="top" class="min-h-screen flex items-center justify-center bg-dark-deep relative overflow-hidden">
+            <div class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-24 lg:py-32 text-center">
+                <div class="space-y-6 sm:space-y-8">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent shadow-lg shadow-primary/20">
+                        <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight px-2">
+                        Business Intelligence, <span class="gradient-text">Built For You</span>
+                    </h1>
+                    <p class="text-base sm:text-xl md:text-2xl text-gray-400 mx-auto max-w-3xl mt-4 md:mt-8 px-2">
+                        From data collection to actionable insights, we handle every step of your analytics journey.
+                    </p>
+                </div>
+
+                <!-- Illustrative dashboard mockup — generic, not a screenshot of any real product -->
+                <div class="relative max-w-4xl mx-auto mt-10 sm:mt-14 mb-10 sm:mb-14 px-2 text-left">
+                    <div class="hidden sm:block absolute -top-16 -right-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+                    <div class="hidden sm:block absolute -bottom-16 left-1/4 w-64 h-64 bg-accent/20 rounded-full blur-3xl"></div>
+
+                    <div class="hidden sm:block absolute -left-4 -bottom-6 w-56 bg-dark-lighter/90 backdrop-blur border border-dark-light rounded-xl shadow-xl p-4 -rotate-3 z-10">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Connected Sources</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 bg-dark-deep rounded-lg px-2.5 py-2">
+                                <div class="w-5 h-5 rounded bg-white p-0.5 shrink-0"><img src="images/connectors/ga4.png" class="w-full h-full object-contain" alt=""></div>
+                                <span class="text-xs text-gray-300 flex-1">Google Analytics 4</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-dark-deep rounded-lg px-2.5 py-2">
+                                <div class="w-5 h-5 rounded bg-white p-0.5 shrink-0"><img src="images/connectors/shopify.png" class="w-full h-full object-contain" alt=""></div>
+                                <span class="text-xs text-gray-300 flex-1">Shopify</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-dark-deep rounded-lg px-2.5 py-2">
+                                <div class="w-5 h-5 rounded bg-white p-0.5 shrink-0"><img src="images/connectors/salesforce.png" class="w-full h-full object-contain" alt=""></div>
+                                <span class="text-xs text-gray-300 flex-1">Salesforce</span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>
+                            </div>
+                        </div>
+                        <p class="text-[11px] text-gray-600 mt-3">+ 6 more sources</p>
+                    </div>
+
+                    <div class="relative bg-dark-lighter border border-dark-light rounded-2xl shadow-[0_0_80px_-20px_rgba(78,140,251,0.35)] p-5 sm:p-6 sm:ml-16 overflow-hidden">
+                        <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
+                        <div class="flex items-center justify-between mb-5">
+                            <p class="text-white font-medium">Performance Overview</p>
+                            <div class="flex items-center gap-1.5">
+                                <span class="relative flex h-2 w-2">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                </span>
+                                <span class="text-xs text-gray-500">Last 30 days</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3 mb-5">
+                            <div class="bg-dark-deep rounded-lg p-3">
+                                <div class="flex items-center gap-1.5 mb-1.5">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-1 rounded shrink-0">
+                                        <svg class="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <line x1="12" y1="1" x2="12" y2="23" stroke-linecap="round" stroke-width="2"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                                        </svg>
+                                    </div>
+                                    <p class="text-xs text-gray-500">Revenue</p>
+                                </div>
+                                <p class="text-lg font-bold text-white">$482K</p>
+                                <p class="text-xs text-emerald-400 mt-0.5">▲ 12.4%</p>
+                            </div>
+                            <div class="bg-dark-deep rounded-lg p-3">
+                                <div class="flex items-center gap-1.5 mb-1.5">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-1 rounded shrink-0">
+                                        <svg class="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <p class="text-xs text-gray-500">Sessions</p>
+                                </div>
+                                <p class="text-lg font-bold text-white">128K</p>
+                                <p class="text-xs text-emerald-400 mt-0.5">▲ 8.1%</p>
+                            </div>
+                            <div class="bg-dark-deep rounded-lg p-3">
+                                <div class="flex items-center gap-1.5 mb-1.5">
+                                    <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-1 rounded shrink-0">
+                                        <svg class="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <circle cx="12" cy="12" r="9" stroke-width="2"/>
+                                            <circle cx="12" cy="12" r="5" stroke-width="2"/>
+                                            <circle cx="12" cy="12" r="1" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <p class="text-xs text-gray-500">Conversion</p>
+                                </div>
+                                <p class="text-lg font-bold text-white">3.4%</p>
+                                <p class="text-xs text-emerald-400 mt-0.5">▲ 0.6%</p>
+                            </div>
+                        </div>
+                        <div class="bg-dark-deep rounded-lg p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+                                <span class="text-[11px] text-gray-500">Revenue trend</span>
+                            </div>
+                            <svg viewBox="0 0 400 100" class="w-full h-20" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="heroChartFill" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#4E8CFB" stop-opacity="0.35"/>
+                                        <stop offset="100%" stop-color="#4E8CFB" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                                <line x1="0" y1="25" x2="400" y2="25" stroke="#223252" stroke-width="1" stroke-dasharray="4 4"/>
+                                <line x1="0" y1="50" x2="400" y2="50" stroke="#223252" stroke-width="1" stroke-dasharray="4 4"/>
+                                <line x1="0" y1="75" x2="400" y2="75" stroke="#223252" stroke-width="1" stroke-dasharray="4 4"/>
+                                <polyline points="0,70 40,55 80,60 120,35 160,45 200,20 240,32 280,15 320,25 360,10 400,18" fill="none" stroke="#4E8CFB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polygon points="0,70 40,55 80,60 120,35 160,45 200,20 240,32 280,15 320,25 360,10 400,18 400,100 0,100" fill="url(#heroChartFill)"/>
+                                <circle cx="400" cy="18" r="5" fill="#060a12" stroke="#4E8CFB" stroke-width="2.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- App Section -->
+        <section id="app" class="py-16 sm:py-24 bg-dark-deep relative gradient-dark-3 border-t border-dark-light">
+            <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 relative">
+                <div class="max-w-2xl mx-auto text-center mb-16">
+                    <span class="text-primary text-sm font-medium tracking-wider uppercase">App</span>
+                    <h2 class="mt-3 text-4xl font-bold">Your Data, One Workspace</h2>
+                    <p class="mt-4 text-gray-400 text-lg">
+                        Live dashboards and an AI agent in a single app — so anyone on your team can
+                        check performance or ask a question without waiting on a report.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="lg:order-2">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-lg">Analytics</p>
+                                <p class="text-gray-400 mt-1">Dashboards and tracking that turn raw activity into decisions.</p>
+                            </div>
+                        </div>
+                        <ul class="mt-6 space-y-3 pl-[52px]">
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Live dashboards pulling from every connected source, no manual refresh</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Custom KPIs and targets, tracked automatically against goals</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Scheduled reports delivered straight to your team's inbox</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:order-1">
+                        <div class="relative aspect-video bg-dark-lighter border border-dark-light rounded-2xl overflow-hidden">
+                            <video class="w-full h-full object-cover" controls preload="metadata" poster="images/app-analytics-preview-poster.jpg">
+                                <source src="videos/app-analytics-preview.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ai-agent" class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mt-16 lg:mt-24 scroll-mt-28">
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8V4H8"/>
+                                    <rect x="4" y="8" width="16" height="12" rx="2" stroke-width="1.5"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 14h2M20 14h2M9 13v2M15 13v2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-lg">AI Agent</p>
+                                <p class="text-gray-400 mt-1">Ask questions in plain language and get answers straight from your data.</p>
+                            </div>
+                        </div>
+                        <ul class="mt-6 space-y-3 pl-[52px]">
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Ask in plain English — no formulas, filters, or query language</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Ask follow-up questions and drill in without starting over</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Answers pulled straight from your live, connected data</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="bg-dark-lighter border border-dark-light rounded-2xl overflow-hidden">
+                            <img src="images/ai-agent-preview.jpg" alt="Indexalo AI Agent — ask for an analysis in plain language" class="w-full h-auto block">
+                            <p class="px-5 py-3 text-sm text-gray-400 border-t border-dark-light">Our AI Agent, answering questions straight from a client's connected data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="custom-reports" class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mt-16 lg:mt-24 scroll-mt-28">
+                    <div class="lg:order-2">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
+                                <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <rect x="3" y="3" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                    <rect x="14" y="3" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                    <rect x="3" y="14" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                    <rect x="14" y="14" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-lg">Custom Reports</p>
+                                <p class="text-gray-400 mt-1">Organize saved views into folders your whole team can navigate — no more digging through one long list of dashboards.</p>
+                            </div>
+                        </div>
+                        <ul class="mt-6 space-y-3 pl-[52px]">
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>An Overview report rolling up the last 12 months across every connected source</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Campaign reports breaking down spend by channel — Google Ads, Meta Ads, and combined — with performance charted by week or quarter</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-gray-300">
+                                <svg class="w-4 h-4 text-primary mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span>Drill down to results by sub-source, by sub-source and owner, or by individual campaign</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:order-1">
+                        <!-- Illustrative preview — a report open from the folder tree, hand-built, not a screenshot -->
+                        <div class="bg-dark-lighter border border-dark-light rounded-2xl overflow-hidden">
+                            <div class="grid grid-cols-[130px_1fr] sm:grid-cols-[160px_1fr]">
+                                <div class="border-r border-dark-light bg-dark-deep/40 p-3 sm:p-4 text-xs sm:text-sm">
+                                    <div class="flex items-center gap-1.5 text-white font-medium">
+                                        <svg class="w-3.5 h-3.5 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <rect x="3" y="3" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                            <rect x="14" y="3" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                            <rect x="3" y="14" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                            <rect x="14" y="14" width="7" height="7" rx="1" stroke-width="1.5"/>
+                                        </svg>
+                                        <span class="truncate">Reports</span>
+                                    </div>
+                                    <div class="mt-1.5 pl-1.5 ml-1 border-l border-dark-light">
+                                        <div class="flex items-center gap-1.5 text-gray-300 py-1 pl-1.5">
+                                            <svg class="w-3.5 h-3.5 text-gray-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/>
+                                            </svg>
+                                            <span class="truncate">Strategy</span>
+                                        </div>
+                                        <div class="pl-1.5 ml-2.5 border-l border-dark-light">
+                                            <div class="text-gray-400 py-1 pl-2.5 truncate">Overview</div>
+                                            <div class="bg-primary/10 text-white font-medium rounded-md py-1 pl-2.5 pr-1.5 truncate">Campaign Perf...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 sm:p-6">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <p class="text-white font-medium">Campaign Performance</p>
+                                        <span class="text-xs text-gray-500 hidden sm:inline">Last 30 days</span>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-2 sm:gap-3 mb-4">
+                                        <div class="bg-dark-deep rounded-lg p-2.5 sm:p-3">
+                                            <p class="text-[11px] sm:text-xs text-gray-500">Ad Spend</p>
+                                            <p class="text-sm sm:text-lg font-bold text-white mt-1">$18.4K</p>
+                                            <p class="text-[11px] sm:text-xs text-primary mt-0.5">▲ 6.2%</p>
+                                        </div>
+                                        <div class="bg-dark-deep rounded-lg p-2.5 sm:p-3">
+                                            <p class="text-[11px] sm:text-xs text-gray-500">Clicks</p>
+                                            <p class="text-sm sm:text-lg font-bold text-white mt-1">42.1K</p>
+                                            <p class="text-[11px] sm:text-xs text-primary mt-0.5">▲ 11.8%</p>
+                                        </div>
+                                        <div class="bg-dark-deep rounded-lg p-2.5 sm:p-3">
+                                            <p class="text-[11px] sm:text-xs text-gray-500">ROAS</p>
+                                            <p class="text-sm sm:text-lg font-bold text-white mt-1">4.7x</p>
+                                            <p class="text-[11px] sm:text-xs text-primary mt-0.5">▲ 0.3x</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-dark-deep rounded-lg p-3 sm:p-4">
+                                        <svg viewBox="0 0 400 100" class="w-full h-16 sm:h-20" preserveAspectRatio="none">
+                                            <defs>
+                                                <linearGradient id="customReportsChartFill" x1="0" y1="0" x2="0" y2="1">
+                                                    <stop offset="0%" stop-color="#4E8CFB" stop-opacity="0.35"/>
+                                                    <stop offset="100%" stop-color="#4E8CFB" stop-opacity="0"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <polyline points="0,65 40,72 80,50 120,58 160,30 200,42 240,22 280,34 320,15 360,26 400,12" fill="none" stroke="#4E8CFB" stroke-width="2.5"/>
+                                            <polygon points="0,65 40,72 80,50 120,58 160,30 200,42 240,22 280,34 320,15 360,26 400,12 400,100 0,100" fill="url(#customReportsChartFill)"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="px-5 py-3 text-sm text-gray-400 border-t border-dark-light">Illustrative preview — reports and dashboards, organized the way your team actually works.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 sm:py-24 bg-dark relative gradient-dark-2 border-t border-dark-light">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+                    <div class="lg:py-8">
+                        <span class="text-primary text-sm font-medium tracking-wider uppercase">Let's Connect</span>
+                        <h2 class="mt-3 text-4xl font-bold mb-8">Ready to Start Your Data Journey?</h2>
+                        <div class="space-y-6 text-gray-400">
+                            <p class="text-lg">When you hit submit, here's what to expect:</p>
+                            <div class="pl-4 border-l-2 border-primary/30">
+                                <p>Within 24 hours, we'll reach out to schedule a friendly 30-minute chat where you can tell us about your vision, challenges, and what success looks like for you.</p>
+                            </div>
+                            <div class="pl-4 border-l-2 border-primary/30">
+                                <p>Based on our conversation, we'll craft a tailored solution proposal that aligns perfectly with your goals.</p>
+                            </div>
+                            <p>That's it. Simple. Strategic. Efficient. Personable.</p>
+                            <p class="text-primary font-medium">And yes, even a little enjoyable.</p>
+                            <p class="text-sm italic">As every sales process should be.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 lg:p-0">
+                        <form id="contactForm" class="space-y-8 sm:space-y-10 bg-gradient-to-br from-gray-700/90 to-gray-800/95 p-8 sm:p-12 lg:p-14 rounded-2xl border border-dark-light/50 shadow-xl backdrop-blur-sm">
+                            <div id="formSuccess" class="hidden">
+                                <div class="bg-primary/10 border-2 border-primary/20 rounded-xl p-6 text-center">
+                                    <svg class="w-12 h-12 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    <h3 class="text-xl font-bold text-white mb-2">Message Sent Successfully!</h3>
+                                    <p class="text-gray-300">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                                </div>
+                            </div>
+                            <div id="formFields">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
+                                    <div class="space-y-4">
+                                        <label for="firstName" class="block text-base font-medium text-white">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" required class="block w-full rounded-xl bg-dark border-2 border-dark-light focus:border-primary focus:ring-2 focus:ring-primary/20 h-16 px-6 text-lg transition-all duration-200" placeholder="John">
+                                    </div>
+                                    <div class="space-y-4">
+                                        <label for="lastName" class="block text-base font-medium text-white">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" required class="block w-full rounded-xl bg-dark border-2 border-dark-light focus:border-primary focus:ring-2 focus:ring-primary/20 h-16 px-6 text-lg transition-all duration-200" placeholder="Carter">
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
+                                    <div class="space-y-4">
+                                        <label for="email" class="block text-base font-medium text-white">Email *</label>
+                                        <input type="email" id="email" name="email" required class="block w-full rounded-xl bg-dark border-2 border-dark-light focus:border-primary focus:ring-2 focus:ring-primary/20 h-16 px-6 text-lg transition-all duration-200" placeholder="you@company.com">
+                                    </div>
+                                    <div class="space-y-4">
+                                        <label for="company" class="block text-base font-medium text-white">Company</label>
+                                        <input type="text" id="company" name="company" class="block w-full rounded-xl bg-dark border-2 border-dark-light focus:border-primary focus:ring-2 focus:ring-primary/20 h-16 px-6 text-lg transition-all duration-200" placeholder="Your Company">
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <label for="budget" class="block text-base font-medium text-white">Project Budget Range *</label>
+                                    <select id="budget" name="budget" required class="block w-full rounded-xl bg-dark border-2 border-dark-light focus:border-primary focus:ring-2 focus:ring-primary/20 h-16 px-6 text-lg transition-all duration-200">
+                                        <option value="" disabled selected></option>
+                                        <option value="0-5k">$0 - $5,000</option>
+                                        <option value="5-10k">$5,000 - $10,000</option>
+                                        <option value="10-25k">$10,000 - $25,000</option>
+                                        <option value="25-50k">$25,000 - $50,000</option>
+                                        <option value="50k+">$50,000+</option>
+                                        <option value="not-sure">I'm not sure yet</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-4">
+                                    <label for="message" class="block text-base font-medium text-white">Message *</label>
+                                    <textarea id="message" name="message" rows="4" required class="block w-full rounded-xl bg-dark border-2 border-dark-light focus:border-primary focus:ring-2 focus:ring-primary/20 p-6 text-lg transition-all duration-200 min-h-[200px] resize-y" placeholder="Tell us about your project..."></textarea>
+                                </div>
+                                <div class="pt-8">
+                                    <button type="submit" id="submitButton" class="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-medium py-4 px-10 text-lg rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-dark-deep disabled:opacity-50 disabled:cursor-not-allowed">
+                                        <span class="default-text">Take Off</span>
+                                        <span class="sending-text hidden">Sending...</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 sm:py-16 lg:py-24 bg-dark-deep border-t border-dark-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
+                    <div class="space-y-6 md:pr-8">
+                        <div><img src="images/indexalo_logo.png" alt="Indexalo" class="h-16 w-auto"></div>
+                        <div class="pt-2">
+                            <p class="text-gray-400 text-lg">Indexalo</p>
+                            <p class="text-gray-400 mt-4 text-lg">info@indexalo.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-white">Quick Links</h3>
+                        <nav class="space-y-4">
+                            <a href="/consulting#services" class="block text-gray-400 hover:text-primary transition-colors">Services</a>
+                            <a href="#contact" class="block text-gray-400 hover:text-primary transition-colors">Contact</a>
+                            <a class='block text-gray-400 hover:text-primary transition-colors' href='/privacy-policy'>Privacy Policy</a>
+                            <a href="#" onclick="openCookieSettings(); return false;" class="block text-gray-400 hover:text-primary transition-colors">Cookie Preferences</a>
+                        </nav>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-white">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <p class="text-gray-400 text-lg">Ready to transform your data infrastructure?</p>
+                            <a href="#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg transition-all duration-300">Start Your Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 pt-8 border-t border-dark-light">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="flex items-center space-x-4">
+                            <p class="text-gray-400 text-sm">Copyright © 2026 Indexalo</p>
+                            <span class="text-gray-400 text-sm">|</span>
+                            <a class='text-gray-400 hover:text-primary text-sm transition-colors' href='/privacy-policy'>Privacy Policy</a>
+                        </div>
+                        <p class="text-gray-400 text-sm">Gradient icons by Icons8</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // In-page nav links (App, AI Agent, Custom Reports, Contact, the logo)
+        // scroll to their section without ever writing #app/#contact etc. into
+        // the address bar — keeps URLs clean (e.g. indexalo.com instead of
+        // indexalo.com/#app) for sharing and for SEO.
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+            link.addEventListener('click', (e) => {
+                const hash = link.getAttribute('href');
+                const target = hash.length > 1 ? document.querySelector(hash) : document.body;
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Cross-page links (e.g. consulting.html linking to /#app) still need
+        // a real hash to say where to land — scroll there once, then strip
+        // the hash from the URL so it doesn't linger in the address bar.
+        if (window.location.hash) {
+            const landingTarget = document.querySelector(window.location.hash);
+            if (landingTarget) {
+                window.requestAnimationFrame(() => {
+                    landingTarget.scrollIntoView({ behavior: 'auto', block: 'start' });
+                    history.replaceState(null, '', window.location.pathname + window.location.search);
+                });
+            }
+        }
+
+        // Contact form — submits to /api/submit_form, a Vercel serverless
+        // function (api/submit_form.py) that sends the same two emails
+        // your original Flask app sent, via Gmail SMTP.
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitButton = document.getElementById('submitButton');
+            const defaultText = submitButton.querySelector('.default-text');
+            const sendingText = submitButton.querySelector('.sending-text');
+            const formFields = document.getElementById('formFields');
+            const formSuccess = document.getElementById('formSuccess');
+
+            if (submitButton.disabled) return;
+            submitButton.disabled = true;
+            defaultText.classList.add('hidden');
+            sendingText.classList.remove('hidden');
+
+            const clearError = () => {
+                const existing = formFields.querySelector('.form-error-message');
+                if (existing) existing.remove();
+            };
+            const showError = (message) => {
+                clearError();
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'form-error-message bg-red-500/10 border-2 border-red-500/20 rounded-xl p-4 mb-6 text-center';
+                errorDiv.innerHTML = `<p class="text-red-400 text-sm">${message}</p>`;
+                formFields.prepend(errorDiv);
+            };
+
+            try {
+                const response = await fetch('/api/submit_form', {
+                    method: 'POST',
+                    body: new FormData(e.target),
+                });
+                const data = await response.json();
+
+                if (data.status === 'success') {
+                    clearError();
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'conversion', {'send_to': 'AW-16887610616/fqDNCLbC4aIaEPj50fQ-'});
+                    }
+                    formFields.style.display = 'none';
+                    formSuccess.classList.remove('hidden');
+
+                    setTimeout(() => {
+                        e.target.reset();
+                        formSuccess.classList.add('hidden');
+                        formFields.style.display = 'block';
+                        submitButton.disabled = false;
+                        defaultText.classList.remove('hidden');
+                        sendingText.classList.add('hidden');
+                    }, 5000);
+                    return;
+                }
+
+                showError(data.message || 'Something went wrong. Please try again.');
+            } catch (err) {
+                showError('Network error — please check your connection and try again.');
+            }
+
+            submitButton.disabled = false;
+            defaultText.classList.remove('hidden');
+            sendingText.classList.add('hidden');
+        });
+
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId.length <= 1) return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
