@@ -272,13 +272,13 @@
             <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
                 <div class="flex justify-between items-center">
                     <div class="flex-shrink-0">
-                        <a href="/" class="block">
+                        <a href="/new" class="block">
                             <img class="h-12 sm:h-14 w-auto" src="images/indexalo_logo.png" alt="Indexalo">
                         </a>
                     </div>
                     <div class="hidden md:flex items-center space-x-6">
                         <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-                            <a href="/#app" @click="open = false" class="nav-link flex items-center gap-1 text-gray-300 text-lg font-medium">
+                            <a href="/new#platform" @click="open = false" class="nav-link flex items-center gap-1 text-gray-300 text-lg font-medium">
                                 App
                                 <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -292,7 +292,7 @@
                                  x-transition:leave-start="opacity-100 translate-y-0"
                                  x-transition:leave-end="opacity-0 -translate-y-1"
                                  class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[340px] bg-dark-lighter border border-dark-light rounded-xl shadow-xl p-3 space-y-1">
-                                <a href="/#app" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                <a href="/new#platform" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
                                     <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
                                         <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
@@ -303,7 +303,7 @@
                                         <p class="text-sm text-gray-400 mt-0.5">Dashboards and tracking that turn raw activity into decisions.</p>
                                     </div>
                                 </a>
-                                <a href="/#ai-agent" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                <a href="/new#ask-ai" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
                                     <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
                                         <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8V4H8"/>
@@ -316,7 +316,7 @@
                                         <p class="text-sm text-gray-400 mt-0.5">Ask questions in plain language and get answers straight from your data.</p>
                                     </div>
                                 </a>
-                                <a href="/#custom-reports" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
+                                <a href="/new#platform" @click="open = false" class="flex items-start gap-3 p-3 rounded-lg hover:bg-dark-light transition-colors">
                                     <div class="bg-gradient-to-br from-primary/20 to-accent/20 p-2.5 rounded-lg shrink-0">
                                         <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <rect x="3" y="3" width="7" height="7" rx="1" stroke-width="1.5"/>
@@ -404,7 +404,7 @@
                                 </a>
                             </div>
                         </div>
-                        <a href="/#contact" class="bg-primary hover:bg-primary/90 text-white text-lg px-6 py-2 rounded-lg transition-all duration-300">Contact Us</a>
+                        <a href="/new#contact" class="bg-primary hover:bg-primary/90 text-white text-lg px-6 py-2 rounded-lg transition-all duration-300">Contact Us</a>
                     </div>
                     <div class="md:hidden flex items-center">
                         <button @click="isMenuOpen = !isMenuOpen"
@@ -430,15 +430,15 @@
                     <div class="px-4 pt-2 pb-1">
                         <p class="text-xs uppercase tracking-wider text-gray-500 font-medium">App</p>
                     </div>
-                    <a href="/#app" @click="isMenuOpen = false"
+                    <a href="/new#platform" @click="isMenuOpen = false"
                        class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
                         Analytics
                     </a>
-                    <a href="/#ai-agent" @click="isMenuOpen = false"
+                    <a href="/new#ask-ai" @click="isMenuOpen = false"
                        class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
                         AI Agent
                     </a>
-                    <a href="/#custom-reports" @click="isMenuOpen = false"
+                    <a href="/new#platform" @click="isMenuOpen = false"
                        class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
                         Custom Reports
                     </a>
@@ -465,7 +465,7 @@
                        class="block pl-8 pr-4 py-2 text-gray-300 hover:text-primary transition-colors text-lg font-medium">
                         Our Clients
                     </a>
-                    <a href="/#contact" @click="isMenuOpen = false"
+                    <a href="/new#contact" @click="isMenuOpen = false"
                        class="block px-4 py-3 bg-primary hover:bg-primary/90 text-white text-xl rounded-lg transition-colors">
                         Contact Us
                     </a>
@@ -499,7 +499,7 @@
                             <a href="#what-we-deliver" class="bg-primary hover:bg-primary/90 text-white text-sm sm:text-base md:text-lg px-4 sm:px-8 py-3 sm:py-4 w-[80%] sm:w-auto rounded-lg transition-all duration-300 transform hover:-translate-y-1">
                                 View Implementation Services
                             </a>
-                            <a href="/#contact" class="bg-dark-light hover:bg-dark-light/80 text-white text-sm sm:text-base md:text-lg px-4 sm:px-8 py-3 sm:py-4 w-[80%] sm:w-auto rounded-lg transition-all duration-300 transform hover:-translate-y-1">
+                            <a href="/new#contact" class="bg-dark-light hover:bg-dark-light/80 text-white text-sm sm:text-base md:text-lg px-4 sm:px-8 py-3 sm:py-4 w-[80%] sm:w-auto rounded-lg transition-all duration-300 transform hover:-translate-y-1">
                                 Start Your Project
                             </a>
                         </div>
@@ -785,7 +785,7 @@
                         This is the shortlist — we regularly wire in other sources on request.
                         Tell us what you're working with.
                     </p>
-                    <a href="/#contact" class="mt-8 inline-block bg-primary hover:bg-primary/90 text-white text-lg px-8 py-3 rounded-lg transition-all duration-300">
+                    <a href="/new#contact" class="mt-8 inline-block bg-primary hover:bg-primary/90 text-white text-lg px-8 py-3 rounded-lg transition-all duration-300">
                         Start Your Project
                     </a>
                 </div>
@@ -1004,7 +1004,7 @@
                         <h3 class="text-xl font-semibold mb-6 text-white">Quick Links</h3>
                         <nav class="space-y-4">
                             <a href="#services" class="block text-gray-400 hover:text-primary transition-colors">Services</a>
-                            <a href="/#contact" class="block text-gray-400 hover:text-primary transition-colors">Contact</a>
+                            <a href="/new#contact" class="block text-gray-400 hover:text-primary transition-colors">Contact</a>
                             <a class='block text-gray-400 hover:text-primary transition-colors' href='/privacy-policy'>Privacy Policy</a>
                             <a href="#" onclick="openCookieSettings(); return false;" class="block text-gray-400 hover:text-primary transition-colors">Cookie Preferences</a>
                         </nav>
@@ -1013,7 +1013,7 @@
                         <h3 class="text-xl font-semibold mb-6 text-white">Get in Touch</h3>
                         <div class="space-y-4">
                             <p class="text-gray-400 text-lg">Ready to transform your data infrastructure?</p>
-                            <a href="/#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg transition-all duration-300">Start Your Project</a>
+                            <a href="/new#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg transition-all duration-300">Start Your Project</a>
                         </div>
                     </div>
                 </div>
