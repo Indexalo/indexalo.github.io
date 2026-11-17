@@ -1,0 +1,1 @@
+import{t as e}from"./scroll-fx.0XC_ru6o.js";e();
