@@ -1,1 +1,0 @@
-import{t as e}from"./scroll-fx.0XC_ru6o.js";e();var t=new Set(Array.from(document.querySelectorAll(`[data-plan]`)).map(e=>e.dataset.plan));document.addEventListener(`click`,e=>{let n=e.target.closest(`[data-plan]`),r=document.getElementById(`message`);if(!n||!r)return;let i=r.value.trim();(!i||t.has(i))&&(r.value=n.dataset.plan)});
