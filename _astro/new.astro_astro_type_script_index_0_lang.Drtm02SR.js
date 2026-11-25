@@ -1,0 +1,1 @@
+import{t as e}from"./hero.ByMsRdM8.js";import{t}from"./scroll-fx.0XC_ru6o.js";var n=document.querySelector(`[data-hero]`);n&&e(n),t();
