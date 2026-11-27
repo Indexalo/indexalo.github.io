@@ -1,0 +1,1 @@
+import{t as e}from"./hero.ByMsRdM8.js";import{t}from"./scroll-fx.0XC_ru6o.js";import{i as n,n as r,o as i}from"./motion.CB_t1NGm.js";n()||document.querySelectorAll(`[data-build]`).forEach(e=>{let t=r(e);i.create({trigger:e,start:`top 80%`,once:!0,onEnter:()=>t.play()})});var a=document.querySelector(`[data-hero]`);a&&e(a),t();
